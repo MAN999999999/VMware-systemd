@@ -1,0 +1,13 @@
+[Unit]
+#--身份验证守护服务;
+Description=VMware Authentication Daemon
+After=vmware-vmnet.service
+PartOf=vmware.target
+
+[Service]
+Type=simple
+RemainAfterExit=yes
+ExecStart=/usr/sbin/vmware-authdlauncher
+
+[Install]
+WantedBy=vmware.target

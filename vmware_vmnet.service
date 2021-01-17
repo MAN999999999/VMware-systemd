@@ -1,0 +1,16 @@
+[Unit]
+#--虚拟机以太网服务;
+Description=VMware Virtual Ethernet
+After=vmware-vmblock.service
+PartOf=vmware.target
+
+[Service]
+Type=simple
+RemainAfterExit=yes
+ExecStartPre=/sbin/modprobe vmnet
+ExecStart=/usr/bin/vmware-networks --start
+ExecStop=/usr/bin/vmware-networks --stop
+ExecStopPost=/sbin/modprobe -r vmnet
+
+[Install]
+WantedBy=vmware.target

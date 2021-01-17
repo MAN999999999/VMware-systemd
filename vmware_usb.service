@@ -1,0 +1,14 @@
+[Unit]
+#--虚拟机USB设备加载服务;
+Description=VMware USB Arbitration Service
+After=vmware-authentication.service
+PartOf=vmware.target
+
+[Service]
+Type=simple
+RemainAfterExit=yes
+ExecStart=/usr/bin/vmware-usbarbitrator
+ExecStop=/usr/bin/vmware-usbarbitrator --kill
+
+[Install]
+WantedBy=vmware.target

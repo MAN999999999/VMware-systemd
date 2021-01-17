@@ -1,0 +1,14 @@
+[Unit]
+#--阻止文件系统服务;
+Description=VMware Blocking File System
+After=vmware-vmci.service
+PartOf=vmware.target
+
+[Service]
+Type=simple
+RemainAfterExit=yes
+ExecStart=/sbin/modprobe vmblock
+ExecStop=/sbin/modprobe -r vmblock
+
+[Install]
+WantedBy=vmware.target

@@ -1,9 +1,9 @@
-# VMware Workstation Systemd 单元
-## 这些服务用于管理VMware Workstation,针对Arch所写;
+# VMware Workstation Systemd
+## 这些服务用于管理VMware Workstation,针对Arch_Linux所写;
 ### 喜欢Arch的唯一理由,一切自己动手,一切自己说了算;
 
 
-## 服务类型;
+## 服务类型说明;
 ```ruby
 vmware_vmmon.service    #虚拟机监视器;
 vmware_vmnet.service    #虚拟以太网;

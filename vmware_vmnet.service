@@ -1,7 +1,7 @@
 [Unit]
 #--虚拟机以太网服务;
 Description=VMware Virtual Ethernet
-After=vmware-vmblock.service
+After=vmware_vmblock.service
 PartOf=vmware.target
 
 [Service]

@@ -1,8 +1,8 @@
 [Unit]
 #--VMCI套接字服务;
 Description=VMware Virtual Machine Communication Interface Socket Family
-Requires=vmware-vmci.service
-After=vmware-vmci.service
+Requires=vmware_vmci.service
+After=vmware_vmci.service
 PartOf=vmware.target
 
 [Service]

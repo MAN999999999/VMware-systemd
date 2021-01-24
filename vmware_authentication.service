@@ -1,7 +1,7 @@
 [Unit]
 #--身份验证守护服务;
 Description=VMware Authentication Daemon
-After=vmware-vmnet.service
+After=vmware_vmnet.service
 PartOf=vmware.target
 
 [Service]

@@ -1,7 +1,7 @@
 [Unit]
 #--虚拟机USB设备加载服务;
 Description=VMware USB Arbitration Service
-After=vmware-authentication.service
+After=vmware_authentication.service
 PartOf=vmware.target
 
 [Service]

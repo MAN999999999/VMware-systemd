@@ -1,7 +1,7 @@
 [Unit]
 #--阻止文件系统服务;
 Description=VMware Blocking File System
-After=vmware-vmci.service
+After=vmware_vmci.service
 PartOf=vmware.target
 
 [Service]

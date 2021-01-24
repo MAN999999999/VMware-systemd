@@ -1,7 +1,7 @@
 [Unit]
 #--虚拟机通信接口服务;
 Description=VMware Virtual Machine Communication Interface
-After=vmware-vmmon.service
+After=vmware_vmmon.service
 PartOf=vmware.target
 
 [Service]

@@ -4,12 +4,12 @@
 
 ## 服务类型说明;
 ```ruby
-vmware_vmmon.service    #虚拟机监视器;
-vmware_vmnet.service    #虚拟以太网;
-vmware_usb.service      #USB加载服务;
-vmware_vmci.service     #虚拟机通信接口;
-vmware_vmsock.service   #VMCI套接字家族;
-vmware_vmblock.service  #阻止文件系统;
+vmware_vmmon.service        #虚拟机监视器;
+vmware_vmnet.service        #虚拟以太网;
+vmware_usb.service          #USB加载服务;
+vmware_vmci.service         #虚拟机通信接口;
+vmware_vmsock.service       #VMCI套接字家族;
+vmware_vmblock.service      #阻止文件系统;
 vmware_authentication.service   #身份验证守护程序;
 ```
 - [→ 本人永久的Github地址](https://github.com/wo2ni)

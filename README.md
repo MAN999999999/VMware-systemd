@@ -1,5 +1,5 @@
 # VMware Workstation Systemd
-## 这些服务用于管理VMware Workstation,针对Arch_Linux所写;
+## 最新版本的VMware Workstation,针对Arch_Linux所写;
 ### 喜欢Arch的唯一理由,一切自己动手,一切自己说了算;
 
 ## 服务类型说明;

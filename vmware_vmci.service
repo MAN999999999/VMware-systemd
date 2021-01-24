@@ -7,8 +7,8 @@ PartOf=vmware.target
 [Service]
 Type=simple
 RemainAfterExit=yes
-ExecStart=/sbin/modprobe vmci
-ExecStop=/sbin/modprobe -r vmci
+ExecStart=/sbin/modprobe vmw_vmci
+ExecStop=/sbin/modprobe -r vmw_vmci
 
 [Install]
 WantedBy=vmware.target

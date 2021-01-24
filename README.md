@@ -12,4 +12,13 @@ vmware_vmsock.service       #VMCI套接字家族;
 vmware_vmblock.service      #阻止文件系统;
 vmware_authentication.service   #身份验证守护程序;
 ```
+## Arch Linux安装教程;
+```
+pacman -Syy git
+git clone https://github.com/wo2ni/VMware-systemd.git
+cd VMware-systemd
+cp -v *ice /lib/systemd/system/ 
+cp -v *get /lib/systemd/system/
+systemctl daemon-reload
+```
 - [→ 本人永久的Github地址](https://github.com/wo2ni)
